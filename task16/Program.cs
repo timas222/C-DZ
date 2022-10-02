@@ -7,14 +7,14 @@
 // 8,9 -> нет
 
 Console.WriteLine("введите первое число");
-int number1 = Convert.ToInt32(Console.ReadLine());
+int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите второе число");
-int number2 = Convert.ToInt32(Console.ReadLine());
+int num2 = Convert.ToInt32(Console.ReadLine());
 
 bool IsSquare(int num1, int num2)
 {
     return num2 == num1 * num1 || num1 == num2 * num2;
 }
 
-if (IsSquare(number1, number2)) Console.WriteLine($"{number1},{number2} => Да!");
-else Console.WriteLine($"{number1},{number2} => Нет!");
+if (IsSquare(num1, num2)) Console.WriteLine($"{num1},{num2} => Да!");
+else Console.WriteLine($"{num1},{num2} => Нет!");
